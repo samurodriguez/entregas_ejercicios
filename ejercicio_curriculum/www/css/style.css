@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: Roboto, "sans-serif";
+}
+
+/* Header */
+
+body > header {
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  min-width: 100%;
+  box-shadow: 0px 2px 5px black;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1.25rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0.5rem;
+}
+
+/* Main */
+
+main {
+  margin-top: 4.5rem;
+}
+
+main section.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+main section.principal h1 {
+  font-weight: 900;
+  font-size: 2.1rem;
+  margin: 0.5rem 0;
+}
+
+main section.principal img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid black;
+  order: -1;
+  margin: 0.5rem;
+}
+
+main section.principal p {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+main section.content {
+  margin: 1rem;
+}
+
+main section.content p {
+  margin: 1rem 0;
+}
+
+main section.content a {
+  display: inline-block;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  background-color: #2d9cdb;
+  color: white;
+  padding: 0.5rem;
+  width: 150px;
+  box-shadow: 2px 2px 1px black;
+}
+
+main section.experience {
+  margin: 1.5rem 1rem;
+}
+
+main section.experience h2 {
+  font-weight: 900;
+  font-size: 2.1rem;
+}
+
+main section.experience ul {
+  margin-left: 1rem;
+}
+
+main section.experience ul li {
+  margin: 1rem 0;
+}
+
+@media (min-width: 700px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main section.principal {
+    max-width: 50vw;
+    display: flex;
+    position: relative;
+    bottom: 3.5rem;
+  }
+
+  main section.content {
+    max-width: 50vw;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  main section.content a {
+    position: relative;
+    right: 16rem;
+    bottom: 6.5rem;
+  }
+
+  main section.experience {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  main section.content a {
+    bottom: 4.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  main section.principal,
+  main section.content,
+  main section.experience {
+    max-width: 30vw;
+  }
+
+  main section.principal {
+    position: static;
+    align-items: flex-end;
+  }
+
+  main section.principal h1 {
+    font-size: 4rem;
+    text-align: right;
+  }
+
+  main section.principal img {
+    align-self: flex-end;
+    margin-right: 0;
+  }
+
+  main section.principal p {
+    font-size: 1.25rem;
+  }
+
+  main section.content a {
+    position: static;
+  }
+
+  main section.experience {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  main section.principal h1 {
+    font-size: 5.5rem;
+  }
+
+  main section.principal p {
+    font-size: 1.5rem;
+  }
+
+  main section.content p {
+    font-size: 1.15rem;
+  }
+
+  main section.content a {
+    font-size: 1.5rem;
+    width: 200px;
+    margin-top: 1rem;
+  }
+
+  main section.experience h2 {
+    font-size: 2.5rem;
+  }
+
+  main section.experience ul li {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  main {
+    margin-top: 6rem;
+  }
+  main section.principal h1 {
+    font-size: 7rem;
+  }
+
+  main section.principal p {
+    font-size: 2rem;
+  }
+
+  main section.content p {
+    font-size: 1.25rem;
+  }
+
+  main section.content a {
+    font-size: 1.5rem;
+    width: 200px;
+    margin-top: 1rem;
+  }
+
+  main section.experience h2 {
+    font-size: 2.85rem;
+  }
+
+  main section.experience ul li {
+    font-size: 1.5rem;
+  }
+}
